@@ -390,9 +390,13 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 320px;
+  height: 300px; 
+  object-fit: cover;
+  display: block; 
+  margin: 0 auto;
 }
+
 
 .project-title {
   margin: 1rem;
