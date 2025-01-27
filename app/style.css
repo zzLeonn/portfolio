@@ -6,6 +6,14 @@
   margin: 0;
   padding: 0;
 }
+#projects {
+  margin-bottom: 4rem;
+}
+
+#contact {
+  margin-top: 6rem;
+}
+
 
 body {
   font-family: "Poppins", sans-serif;
@@ -420,6 +428,7 @@ article .icon {
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -472,4 +481,15 @@ footer p {
 .project-img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.linkedin-badge-container {
+  margin: 0 1rem; 
+  display: flex;
+  justify-content: center;
+}
+
+.badge-base {
+  max-width: 100%;
+  width: 300px; /* Adjust width as needed */
+  margin: 1; /* Ensures no extra margin within the badge */
 }
