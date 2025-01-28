@@ -101,3 +101,27 @@
     text-align: justify;
   }
 }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nav-links {
+    display: none; /* Hide desktop nav links */
+  }
+
+  #hamburger-nav {
+    display: block; /* Show hamburger menu */
+  }
+  
+  section {
+    margin: 0 2rem;
+  }
+
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
