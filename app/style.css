@@ -22,6 +22,7 @@ a:hover {
 }
 #projects {
   margin-bottom: 4rem;
+  overflow-x: hidden;
 }
 
 #contact {
@@ -317,9 +318,19 @@ section {
 }
 
 .about-containers {
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.details-container:nth-child(-n+3) {
+  order: 1;
+}
+.details-container:nth-child(n+4) {
+  order: 2;
 }
 
 .about-details-container {
