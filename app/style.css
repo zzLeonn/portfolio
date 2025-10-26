@@ -322,6 +322,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   justify-items: center;
+  align-items: start;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -361,6 +362,10 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+}
+
+.details-container:hover {
+  transform: translateY(-5px);
 }
 
 .section-container {
@@ -416,7 +421,8 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
-  position: relative;
+  overflow-x: hidden;
+  padding: 2rem 1rem;
 }
 
 .color-container {
