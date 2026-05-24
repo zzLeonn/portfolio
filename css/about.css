@@ -1,0 +1,44 @@
+#about {
+  position: relative;
+}
+
+.about-containers {
+  display: flex;
+
+  gap: 2rem;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+
+  flex: 1;
+
+  background: white;
+
+  border-radius: 2rem;
+
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: var(--border-color);
+
+  text-align: center;
+}
+
+.arrow {
+  position: absolute;
+
+  right: -5rem;
+  bottom: 2.5rem;
+}

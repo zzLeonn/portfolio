@@ -1,0 +1,16 @@
+@import url("./variables.css");
+@import url("./utilities.css");
+@import url("./navbar.css");
+@import url("./profile.css");
+@import url("./about.css");
+@import url("./experience.css");
+@import url("./projects.css");
+@import url("./contact.css");
+@import url("./footer.css");
+@import url("./mediaqueries.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}

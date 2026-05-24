@@ -1,0 +1,133 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  margin-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* DESCRIPTION */
+
+.contact-description {
+  max-width: 600px;
+
+  margin: 1rem auto 2rem;
+
+  color: rgb(85, 85, 85);
+
+  line-height: 1.7;
+}
+
+/* STATUS BADGE */
+
+.availability-badge {
+  padding: 0.6rem 1.2rem;
+
+  border-radius: 999px;
+
+  background: rgb(245, 245, 245);
+
+  color: rgb(60, 60, 60);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  margin-bottom: 3rem;
+
+  border: 1px solid rgb(220, 220, 220);
+}
+
+/* CONTACT GRID */
+
+.contact-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 1.5rem;
+
+  width: 100%;
+  max-width: 900px;
+
+  margin-bottom: 3rem;
+}
+
+/* CONTACT CARD */
+
+.contact-card {
+  background: white;
+
+  border: 1px solid rgb(230, 230, 230);
+
+  border-radius: 1.5rem;
+
+  padding: 2rem;
+
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ICON */
+
+.contact-card-icon {
+  width: 3rem;
+  height: 3rem;
+
+  margin-bottom: 1rem;
+
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover .contact-card-icon {
+  transform: scale(1.1);
+}
+
+/* TITLE */
+
+.contact-card h3 {
+  color: black;
+
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* BRAND COLORS */
+
+.email-card:hover {
+  border-color: #ea4335;
+}
+
+.linkedin-card:hover {
+  border-color: #0a66c2;
+}
+
+.github-card:hover {
+  border-color: #333333;
+}
+
+/* BUTTON */
+
+.contact-btn-container {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,11 @@
+:root {
+  --primary-color: rgb(0, 122, 255);
+  --secondary-color: rgb(85, 85, 85);
+  --hover-color: grey;
+
+  --border-color: rgb(163, 163, 163);
+
+  --transition-speed: 300ms ease;
+
+  --section-spacing: 4vh;
+}

@@ -1,0 +1,216 @@
+/* =========================
+   LARGE TABLETS / SMALL LAPTOPS
+========================= */
+
+@media screen and (max-width: 1400px) {
+
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+
+  .about-containers {
+    flex-wrap: wrap;
+  }
+
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media screen and (max-width: 1200px) {
+
+  /* NAVIGATION */
+
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  nav {
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  /* SECTIONS */
+
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+  section {
+    margin: 0 5%;
+  }
+
+  /* EXPERIENCE */
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  /* IMAGES */
+
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+
+    margin: 0 auto 2rem;
+  }
+
+  /* ABOUT */
+
+  .about-containers {
+    margin-top: 0;
+  }
+
+  /* ARROWS */
+
+  .arrow {
+    display: none;
+  }
+
+  /* PROJECTS */
+
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* =========================
+   MOBILE DEVICES
+========================= */
+
+@media screen and (max-width: 768px) {
+
+  /* GENERAL */
+
+  section {
+    margin: 0 2rem;
+  }
+
+  /* PROFILE */
+
+  #profile {
+    height: auto;
+    margin-bottom: 3rem;
+  }
+
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+
+    justify-content: center;
+  }
+
+  /* TEXT */
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+
+  /* NAV */
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+
+    text-align: center;
+  }
+
+  /* CONTAINERS */
+
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  /* CONTACT */
+
+  #contact,
+  footer {
+    height: fit-content;
+  }
+
+  .contact-info-container {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  /* FOOTER */
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  /* TEXT */
+
+  .text-container {
+    text-align: justify;
+  }
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media screen and (max-width: 480px) {
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+
+  .project-img {
+    border-radius: 1rem;
+  }
+
+  .contact-info-upper-container {
+    padding: 1rem;
+  }
+}
