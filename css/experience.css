@@ -1,43 +1,184 @@
+/* ─── Reset & Base ─── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  color: #0a0a0a;
+}
+
+/* ─── Section ─── */
 #experience {
   position: relative;
+  padding: 7rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.experience-sub-title {
-  color: var(--secondary-color);
-
-  font-weight: 600;
-  font-size: 1.75rem;
-
-  margin-bottom: 2rem;
+/* ─── Header ─── */
+.exp-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0.75rem;
 }
 
-.experience-details-container {
+.exp-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  margin-bottom: 3.5rem;
+}
+
+/* ─── Stats ─── */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  background: #fff;
+  transition: 0.2s;
+}
+
+.stat-card:hover { background: #f8f8f8; }
+
+.stat-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.8rem;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #888;
+}
+
+/* ─── Grid ─── */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* ─── Card ─── */
+.card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 1.75rem;
+  transition: 0.25s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.07);
+}
+
+/* ─── Titles ─── */
+.card-title {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+/* ─── Skills ─── */
+.skill-list {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  gap: 13px;
 }
 
-.article-container {
+.skill-row {
   display: flex;
-
-  flex-wrap: wrap;
-  flex-direction: row;
-
-  gap: 2.5rem;
-
-  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
 }
 
-article {
+.skill-name {
+  font-size: 13px;
+  min-width: 96px;
+}
+
+.skill-bar-wrap {
+  flex: 1;
+  background: #f0f0f0;
+  height: 4px;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.skill-bar {
+  height: 100%;
+  background: #0a0a0a;
+}
+
+.skill-badge {
+  font-size: 10px;
+  padding: 3px 10px;
+  border-radius: 99px;
+}
+
+/* badges */
+.badge-exp { background:#0a0a0a; color:#fff; }
+.badge-int { background:#f0f0f0; }
+.badge-bas { border:1px solid #ddd; }
+
+/* ─── Timeline ─── */
+.timeline-item {
   display: flex;
-
-  width: 10rem;
-
-  justify-content: space-around;
-
-  gap: 0.5rem;
+  gap: 16px;
 }
 
-article .icon {
-  cursor: default;
+.t-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #0a0a0a;
 }
+
+.t-line {
+  width: 1px;
+  flex: 1;
+  background: #e0e0e0;
+}
+
+/* ─── Project ─── */
+.feat-project {
+  background: #0a0a0a;
+  color: #fff;
+  padding: 1.75rem;
+  border-radius: 16px;
+}
+
+/* ─── Animations ─── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s forwards;
+}
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.d1 { animation-delay: 0.05s; }
+.d2 { animation-delay: 0.12s; }
+.d3 { animation-delay: 0.19s; }
+.d4 { animation-delay: 0.26s; }
+.d5 { animation-delay: 0.33s; }
